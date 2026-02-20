@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Dhruv Verma — Cybersecurity Portfolio
 
-## Getting Started
+Welcome to my personal cybersecurity portfolio!  
+This project showcases my work, experience, certifications, and technical interests in **Cybersecurity, SOC, Threat Intelligence, and Network Security**.
 
-First, run the development server:
+🔗 **Live Portfolio:** https://dhruv-portfolio-pearl.vercel.app
+📄 **Resume:** Available for download inside the website  
+💼 **LinkedIn:** https://linkedin.com/in/dhruvverma364  
+
+---
+
+## 👨‍💻 About Me
+
+I’m **Dhruv Verma**, a B.Tech CSE (Cybersecurity & Forensics) student at UPES (2022–2026) and **CompTIA Security+ certified**.  
+I’m passionate about:
+
+- 🔐 Cybersecurity & Blue Team Operations  
+- 🛡️ SOC, Threat Detection & Incident Response  
+- 🌐 Network & Infrastructure Security  
+- 📊 Logs, SIEM, and Security Monitoring  
+- 🤖 Security Automation & Research Projects  
+
+This portfolio is built to reflect both my **technical skills** and **hands-on project work**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (React), TypeScript  
+- **Styling:** Tailwind CSS  
+- **Animations/UI:** Custom components, glassmorphism, reveal effects  
+- **Forms:** EmailJS (contact form)  
+- **Deployment:** Vercel 
+
+---
+
+## 📂 Sections in the Portfolio
+
+### 🧪 Projects
+- Cognitive Honeypot for Cyber Attack Detection  
+- TraceLink — Geolocation Intelligence Platform  
+- Secure Scout — Automated Vulnerability Scanner  
+- IoT Laser Tripwire Intrusion Detection System  
+
+### 💼 Experience
+- **IBM** — Cybersecurity & IoT Intern  
+- **TP Power Plus** — Network Security & Cloud Analyst Intern  
+
+### 📝 Blog & Writeups
+- *How Honeypots Help in Threat Intelligence*  
+- *Breaking Down VPN Security*  
+
+### 🏅 Certifications
+- CompTIA Security+ (Featured)  
+- Google Cybersecurity Professional  
+- HackerRank SQL & Software Engineer  
+- Deloitte & Tata Cybersecurity Simulations  
+
+### 📬 Contact
+- Interactive contact form  
+- Scramble / access-style reveal effects for email  
+- Open to internships & full-time roles  
+
+---
+
+## ✨ Features
+
+- ⚡ Modern cyber-themed UI (glassmorphism, glow effects)  
+- 🧠 Interactive blog modal reader  
+- 🧬 Access-style reveal animations  
+- 📱 Fully responsive design  
+- 🏆 Certification timeline & featured badges  
+- 📩 Working contact form (EmailJS)  
+- 🎯 Smooth scrolling & section highlights  
+
+---
+
+## 🚀 Getting Started (Run Locally)
 
 ```bash
+git clone https://github.com/Dhruv-364/dhruv-portfolio.git
+cd dhruv-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
