@@ -1,40 +1,44 @@
 # 🚀 Dhruv Verma — Cybersecurity Portfolio
 
-Welcome to my personal cybersecurity portfolio!  
-This project showcases my work, experience, certifications, and technical interests in **Cybersecurity, SOC, Threat Intelligence, and Network Security**.
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?logo=tailwindcss&logoColor=38BDF8)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
-🔗 **Live Portfolio:** https://dhruv-portfolio-pearl.vercel.app
-📄 **Resume:** Available for download inside the website  
+> A modern, recruiter-focused cybersecurity portfolio showcasing projects, internships, certifications, and technical writeups in **Cybersecurity, SOC, Threat Intelligence, and Network Security**.
+
+🔗 **Live Portfolio (Vercel):** https://dhruv-portfolio-pearl.vercel.app
+📄 **Resume:** Available on the website  
 💼 **LinkedIn:** https://linkedin.com/in/dhruvverma364  
 
 ---
 
 ## 👨‍💻 About Me
 
-I’m **Dhruv Verma**, a B.Tech CSE (Cybersecurity & Forensics) student at UPES (2022–2026) and **CompTIA Security+ certified**.  
-I’m passionate about:
+I’m **Dhruv Verma**, a B.Tech CSE (Cybersecurity & Forensics) student at UPES (2022–2026) and **CompTIA Security+ certified**.
 
-- 🔐 Cybersecurity & Blue Team Operations  
-- 🛡️ SOC, Threat Detection & Incident Response  
+I’m actively seeking **internships and entry-level roles** in:
+- 🔐 Cybersecurity / Blue Team  
+- 🛡️ SOC & Incident Response  
 - 🌐 Network & Infrastructure Security  
-- 📊 Logs, SIEM, and Security Monitoring  
-- 🤖 Security Automation & Research Projects  
+- 📊 SIEM, Logs & Security Monitoring  
 
-This portfolio is built to reflect both my **technical skills** and **hands-on project work**.
+This portfolio is designed to give recruiters a **quick, clear view of my skills, hands-on experience, and projects**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js (React), TypeScript  
+- **Framework:** Next.js (React) + TypeScript  
 - **Styling:** Tailwind CSS  
-- **Animations/UI:** Custom components, glassmorphism, reveal effects  
+- **UI/UX:** Glassmorphism, animations, interactive modals  
 - **Forms:** EmailJS (contact form)  
-- **Deployment:** Vercel 
+- **Deployment:** Vercel  
 
 ---
 
-## 📂 Sections in the Portfolio
+## 📂 What’s Inside
 
 ### 🧪 Projects
 - Cognitive Honeypot for Cyber Attack Detection  
@@ -56,26 +60,21 @@ This portfolio is built to reflect both my **technical skills** and **hands-on p
 - HackerRank SQL & Software Engineer  
 - Deloitte & Tata Cybersecurity Simulations  
 
-### 📬 Contact
-- Interactive contact form  
-- Scramble / access-style reveal effects for email  
-- Open to internships & full-time roles  
-
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- ⚡ Modern cyber-themed UI (glassmorphism, glow effects)  
-- 🧠 Interactive blog modal reader  
+- ⚡ Modern cyber-themed UI with glassmorphism & glow effects  
+- 🧠 Interactive blog reader (modal-based)  
 - 🧬 Access-style reveal animations  
-- 📱 Fully responsive design  
-- 🏆 Certification timeline & featured badges  
+- 📱 Fully responsive (desktop, tablet, mobile)  
+- 🏆 Certification timeline + featured badges  
 - 📩 Working contact form (EmailJS)  
-- 🎯 Smooth scrolling & section highlights  
+- 🎯 Smooth scrolling + active section highlighting  
 
 ---
 
-## 🚀 Getting Started (Run Locally)
+## 🚀 Run Locally
 
 ```bash
 git clone https://github.com/Dhruv-364/dhruv-portfolio.git
