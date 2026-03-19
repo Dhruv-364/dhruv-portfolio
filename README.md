@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dhruv Portfolio
 
-## Getting Started
+Personal portfolio built with Next.js App Router for Dhruv Verma.
 
-First, run the development server:
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- EmailJS for contact form submission
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Notes:
+- `dev` uses `next dev --webpack`
+- `build` uses `next build --webpack`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Local Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the dev server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open `http://localhost:3000`.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+app/
+  globals.css         Global styles
+  layout.tsx          App layout and metadata
+  page.tsx            Portfolio page UI
+  portfolioData.ts    Portfolio content source
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+public/
+  DhruvVerma-Resume.pdf
+  profile3.png
+  certs/
+    comptia.png
+    deloitte.png
+    google.png
+    hackerrank.png
+    tata.png
+```
+
+## Content Updates
+
+Most portfolio content is managed from:
+
+- `app/portfolioData.ts`
+
+This includes:
+
+- hero content
+- project cards
+- experience entries
+- blog/writeup content
+- certifications
+- contact copy
+- footer links
+
+Main layout and section presentation live in:
+
+- `app/page.tsx`
+- `app/globals.css`
+
+## Contact Form
+
+The contact form uses EmailJS from the client side through `@emailjs/browser`.
+
+Current integration is wired in:
+
+- `app/page.tsx`
+
+If you change EmailJS service, template, or public key, update the values in that file.
+
+## Assets
+
+Current active assets used by the portfolio:
+
+- `public/profile3.png`
+- `public/DhruvVerma-Resume.pdf`
+- `public/certs/*`
+
+## Verification
+
+Recommended checks:
+
+```bash
+npm run lint
+npm run build
+```
