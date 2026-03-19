@@ -10,19 +10,19 @@ type BlogSlug = (typeof portfolioData.blog.posts)[number]["slug"] | null;
 const sectionIds = portfolioData.nav.map((item) => item.id);
 
 function TypewriterName({ text, className = "text-white" }: { text: string; className?: string }) {
-  const [display, setDisplay] = useState("");
+  const [visibleChars, setVisibleChars] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
-    let i = 0;
-
     const interval = setInterval(() => {
-      if (i < text.length) {
-        setDisplay((prev) => prev + text.charAt(i));
-        i += 1;
-      } else {
-        clearInterval(interval);
-      }
+      setVisibleChars((current) => {
+        if (current >= text.length) {
+          clearInterval(interval);
+          return current;
+        }
+
+        return current + 1;
+      });
     }, 120);
 
     const cursorBlink = setInterval(() => {
@@ -40,9 +40,7 @@ function TypewriterName({ text, className = "text-white" }: { text: string; clas
       className="inline-flex items-baseline leading-none align-baseline"
       style={{ minHeight: "1em" }}
     >
-      <span className={className}>
-        {display}
-      </span>
+      <span className={className}>{text.slice(0, visibleChars)}</span>
       <span className="ml-1 text-slate-400 inline-block" style={{ width: "0.6ch" }}>
         {showCursor ? "▍" : " "}
       </span>
