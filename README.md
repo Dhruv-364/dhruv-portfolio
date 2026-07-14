@@ -1,42 +1,30 @@
 # Dhruv Verma Portfolio
 
 <p align="center">
-  <strong>A modern cybersecurity portfolio built with Next.js, React, TypeScript, Tailwind CSS, Three.js, and EmailJS.</strong>
+  <b>A modern cybersecurity portfolio built with Next.js, React, TypeScript, Tailwind CSS, Three.js, and EmailJS.</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Dhruv-364/dhruv-portfolio">
-    <img alt="Repository" src="https://img.shields.io/badge/Repository-dhruv--portfolio-111827?style=for-the-badge&logo=github">
-  </a>
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs">
-  <img alt="React" src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-3D-000000?style=for-the-badge&logo=threedotjs">
-</p>
-
-<p align="center">
-  <a href="#overview">Overview</a>
+  <a href="https://github.com/Dhruv-364/dhruv-portfolio"><b>Repository</b></a>
   |
-  <a href="#highlights">Highlights</a>
+  <a href="#highlights"><b>Highlights</b></a>
   |
-  <a href="#tech-stack">Tech Stack</a>
+  <a href="#tech-stack"><b>Tech Stack</b></a>
   |
-  <a href="#project-map">Project Map</a>
+  <a href="#getting-started"><b>Getting Started</b></a>
   |
-  <a href="#getting-started">Getting Started</a>
+  <a href="#content-management"><b>Content</b></a>
   |
-  <a href="#content-management">Content</a>
-  |
-  <a href="#deployment">Deployment</a>
+  <a href="#deployment"><b>Deployment</b></a>
 </p>
 
 ---
 
 ## Overview
 
-This portfolio presents Dhruv Verma's cybersecurity projects, internship experience, certifications, writeups, resume, and contact options in a responsive single-page experience.
+This portfolio presents Dhruv Verma's security projects, internship experience, certifications, writeups, resume, and contact options in a responsive single-page portfolio.
 
-The interface is designed around a cyber-themed visual system with an animated 3D background, section navigation, project cards, experience timelines, certification assets, and a working EmailJS contact form.
+The site is designed around a cyber-themed visual system with an animated 3D background, section navigation, project cards, experience timelines, certification assets, and a working contact form.
 
 ```text
 Repository: https://github.com/Dhruv-364/dhruv-portfolio
@@ -44,18 +32,30 @@ Repository: https://github.com/Dhruv-364/dhruv-portfolio
 
 ## Highlights
 
-| Feature | Description |
+| Feature | What it does |
 | --- | --- |
-| Responsive Portfolio | Built with the Next.js App Router for a modern single-page portfolio. |
-| Cyber Hero Section | Includes resume download, profile image, and security-focused intro. |
-| 3D Background | Animated Three.js scene with network nodes, grid motion, and pointer movement. |
-| Project Showcase | Covers blue-team, threat-intelligence, vulnerability scanning, IoT, and security engineering work. |
-| Experience Timeline | Highlights cybersecurity, SOC, VAPT, IoT, cloud, and network-security internships. |
-| Blog and Writeups | Powered by structured local content for easy updates. |
-| Certification Gallery | Uses local certification image assets from the `public/certs` directory. |
-| Contact Form | Integrated with EmailJS for direct portfolio contact. |
-| SEO Metadata | Configured in the root app layout. |
-| Centralized Content | Portfolio copy and data are managed from one source file. |
+| Next.js Portfolio | Responsive single-page portfolio built with the App Router. |
+| Cyber Hero Section | Security-focused intro with profile image and resume download. |
+| 3D Visual System | Three.js background with animated network nodes, grid motion, and pointer movement. |
+| Project Showcase | Highlights blue-team, threat-intelligence, vulnerability-scanning, IoT, and security-engineering work. |
+| Experience Timeline | Covers cybersecurity, SOC, VAPT, IoT, cloud, and network-security internships. |
+| Blog and Writeups | Structured local content for security notes and writeups. |
+| Certification Gallery | Local certification assets served from the `public/certs` directory. |
+| Contact Form | EmailJS-powered contact form. |
+| SEO Metadata | Metadata configured in the app layout. |
+| Centralized Content | Portfolio content managed from one data file. |
+
+## Portfolio Flow
+
+```text
+Hero
+  -> About and Education
+  -> Projects
+  -> Experience
+  -> Blog and Writeups
+  -> Certifications
+  -> Contact
+```
 
 ## Tech Stack
 
@@ -70,22 +70,10 @@ Repository: https://github.com/Dhruv-364/dhruv-portfolio
 | Linting | ESLint 9 with Next.js config |
 | Package Manager | npm |
 
-## Experience Flow
-
-```mermaid
-flowchart LR
-  A["Hero Section"] --> B["About and Education"]
-  B --> C["Security Projects"]
-  C --> D["Experience Timeline"]
-  D --> E["Writeups and Blog"]
-  E --> F["Certifications"]
-  F --> G["Contact Form"]
-```
-
-## Project Map
+## Project Structure
 
 <details open>
-<summary><strong>View project structure</strong></summary>
+<summary><b>Click to view folder structure</b></summary>
 
 ```text
 .
@@ -114,23 +102,21 @@ flowchart LR
 
 </details>
 
-## Architecture
+## App Architecture
 
-```mermaid
-flowchart TB
-  Data["app/portfolioData.ts"] --> Page["app/page.tsx"]
-  Scene["app/CyberScene.tsx"] --> Page
-  Styles["app/globals.css"] --> Page
-  Assets["public assets"] --> Page
-  Layout["app/layout.tsx"] --> SEO["SEO Metadata"]
-  Page --> UI["Portfolio Experience"]
-  UI --> Contact["EmailJS Contact Form"]
-```
+| Source | Role |
+| --- | --- |
+| `app/page.tsx` | Main portfolio interface and section layout. |
+| `app/CyberScene.tsx` | Animated Three.js cyber background. |
+| `app/globals.css` | Global styling, theme, responsive behavior, and visual system. |
+| `app/layout.tsx` | Root layout and SEO metadata. |
+| `app/portfolioData.ts` | Central source for portfolio content. |
+| `public/` | Resume, profile image, certification images, and other static assets. |
 
 ## Getting Started
 
 <details open>
-<summary><strong>Prerequisites</strong></summary>
+<summary><b>1. Check prerequisites</b></summary>
 
 Install Node.js and npm. For best results, use a current LTS version of Node.js.
 
@@ -142,7 +128,7 @@ npm --version
 </details>
 
 <details open>
-<summary><strong>Install dependencies</strong></summary>
+<summary><b>2. Install dependencies</b></summary>
 
 ```bash
 npm install
@@ -151,13 +137,13 @@ npm install
 </details>
 
 <details open>
-<summary><strong>Run locally</strong></summary>
+<summary><b>3. Run locally</b></summary>
 
 ```bash
 npm run dev
 ```
 
-Open:
+Open the local development server:
 
 ```text
 http://localhost:3000
@@ -200,11 +186,11 @@ app/globals.css
 app/CyberScene.tsx
 ```
 
-## Asset Guide
+## Assets
 
 Static files live in the `public` directory and are served from the site root.
 
-| File | Public Path |
+| Local file | Site path |
 | --- | --- |
 | `public/profile3.png` | `/profile3.png` |
 | `public/DhruvVerma-Resume.pdf` | `/DhruvVerma-Resume.pdf` |
@@ -249,27 +235,14 @@ Update this file when changing the portfolio focus, role targets, or public bran
 
 This project is ready to deploy on Vercel or any platform that supports Next.js.
 
-```mermaid
-sequenceDiagram
-  participant Dev as Developer
-  participant GitHub as GitHub
-  participant Vercel as Vercel
-  participant Site as Live Portfolio
-
-  Dev->>GitHub: Push portfolio changes
-  GitHub->>Vercel: Trigger deployment
-  Vercel->>Vercel: Install, lint, and build
-  Vercel->>Site: Publish production site
-```
-
-Recommended Vercel flow:
-
-1. Import the GitHub repository into Vercel.
-2. Keep the default Next.js build settings.
-3. Use `npm run build` as the build command.
-4. Let Vercel detect Next.js automatically.
-5. Add environment variables if the contact form is moved out of hardcoded client configuration.
-6. Deploy.
+| Step | Action |
+| --- | --- |
+| 1 | Import the GitHub repository into Vercel. |
+| 2 | Keep the default Next.js build settings. |
+| 3 | Use `npm run build` as the build command. |
+| 4 | Let Vercel detect Next.js automatically. |
+| 5 | Add environment variables if the contact form is moved out of hardcoded client configuration. |
+| 6 | Deploy. |
 
 ## Verification
 
